@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pluto — Explore Your Universe</title>
+    <meta name="description" content="Meet Pluto, a clean and thoughtful desktop browser designed for a better browsing experience.">
+
+    <link rel="icon" type="image/png" href="assets/logo/pluto-logo.png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="js/main.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="brand" aria-label="Pluto Browser Home">
+                <img src="assets/logo/pluto-logo.png" alt="Pluto Logo">
+                <span>PLUTO</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="features.html">Features</a>
+                <a href="download.html">Download</a>
+                <a href="about.html">About</a>
+                <a href="docs.html">Docs</a>
+                <a href="download.html" class="nav-download">Get Pluto <span>↗</span></a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main id="main">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-glow hero-glow-left"></div>
+            <div class="hero-glow hero-glow-right"></div>
+
+            <div class="stars"></div>
+
+            <div class="container hero-content">
+
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    INTRODUCING PLUTO BROWSER
+                </div>
+
+                <h1>
+                    Explore your
+                    <span>universe.</span>
+                </h1>
+
+                <p class="hero-description">
+                    A clean, thoughtful browsing experience
+                    designed to make exploring the web feel
+                    simple, focused and yours.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="download.html" class="btn btn-primary">
+                        Download Pluto <span>↓</span>
+                    </a>
+
+                    <a href="features.html" class="btn btn-secondary">
+                        Discover Pluto <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="sparkle">✦</span> Private. Independent. Yours.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Browser Preview -->
+        <section class="preview-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">MEET YOUR NEW BROWSER</span>
+
+                    <h2>
+                        A new perspective on
+                        <span>browsing.</span>
+                    </h2>
+
+                    <p>
+                        Thoughtfully designed for a comfortable,
+                        organised and focused browsing experience.
+                    </p>
+                </div>
+
+                <div class="browser-preview-wrapper">
+                    <div class="preview-glow"></div>
+
+                    <div class="browser-preview">
+                        <img
+                            src="assets/screenshots/pluto-homepage.png"
+                            alt="Pluto Desktop Browser interface screenshot"
+                            loading="lazy"
+                        >
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Features -->
+        <section class="features-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">MADE FOR EXPLORATION</span>
+
+                    <h2>
+                        Everything you need.
+                        <span>Nothing unnecessary.</span>
+                    </h2>
+
+                    <p>
+                        The essentials of everyday browsing,
+                        brought together in one clean interface.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+                        <div class="feature-icon">▤</div>
+                        <h3>Multi-tab Browsing</h3>
+                        <p>
+                            Keep your browsing organised
+                            with a convenient multi-tab experience.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">★</div>
+                        <h3>Bookmarks</h3>
+                        <p>
+                            Keep your favourite websites
+                            accessible whenever you need them.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">◷</div>
+                        <h3>Browsing History</h3>
+                        <p>
+                            Revisit previously explored websites
+                            with your browsing history.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">⌕</div>
+                        <h3>DuckDuckGo Search</h3>
+                        <p>
+                            Search the web using DuckDuckGo
+                            as Pluto's default search provider.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">◈</div>
+                        <h3>Clean Interface</h3>
+                        <p>
+                            Enjoy a minimal interface with
+                            a distinctive cosmic visual identity.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">⬡</div>
+                        <h3>Security-conscious Design</h3>
+                        <p>
+                            Built with Electron security
+                            practices and controlled permissions.
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="features-link">
+                    <a href="features.html">
+                        Explore all features <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Download CTA -->
+        <section class="download-section">
+            <div class="container">
+
+                <div class="download-card">
+
+                    <div class="download-glow"></div>
+
+                    <span class="eyebrow">YOUR JOURNEY STARTS HERE</span>
+
+                    <h2>
+                        Ready to explore
+                        <span>with Pluto?</span>
+                    </h2>
+
+                    <p>
+                        Discover a different way to experience
+                        the web. Get started with Pluto Desktop.
+                    </p>
+
+                    <a
+                        href="https://github.com/ParamMavani/pluto-browser/releases/tag/v1.1.0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                    >
+                        Download Pluto <span>↓</span>
+                    </a>
+
+                    <div class="download-specs">
+                        <span class="spec-tag">macOS</span>
+                        <span class="spec-dot">·</span>
+                        <span class="spec-tag">Apple Silicon</span>
+                        <span class="spec-dot">·</span>
+                        <span class="spec-tag">Version 1.1.0</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="brand" aria-label="Pluto Browser Home">
+                        <img src="assets/logo/pluto-logo.png" alt="Pluto Logo">
+                        <span>PLUTO</span>
+                    </a>
+
+                    <p>Private. Independent. Yours. Built for modern explorers of the web.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <a href="features.html">Features</a>
+                        <a href="download.html">Download</a>
+                        <a href="about.html">About Pluto</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="docs.html">Documentation</a>
+                        <a href="https://github.com/ParamMavani/pluto-browser"
+                           target="_blank"
+                           rel="noopener noreferrer">GitHub <span>↗</span></a>
+                        <a href="https://github.com/ParamMavani/pluto-browser/issues"
+                           target="_blank"
+                           rel="noopener noreferrer">Report an issue</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Pluto. All rights reserved.</p>
+                <p>Made for exploring the universe.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

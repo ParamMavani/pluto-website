@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Download Pluto — Explore Your Universe</title>
+    <meta name="description" content="Download Pluto Desktop Browser for macOS. Clean, fast, and thoughtful browsing for Apple Silicon.">
+
+    <link rel="icon" type="image/png" href="assets/logo/pluto-logo.png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="js/main.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="brand" aria-label="Pluto Browser Home">
+                <img src="assets/logo/pluto-logo.png" alt="Pluto Logo">
+                <span>PLUTO</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="download.html" class="active">Download</a>
+                <a href="about.html">About</a>
+                <a href="docs.html">Docs</a>
+                <a href="download.html" class="nav-download">Get Pluto <span>↗</span></a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="hero-glow hero-glow-left"></div>
+            <div class="hero-glow hero-glow-right"></div>
+            <div class="stars"></div>
+
+            <div class="container hero-content">
+                <span class="eyebrow">GET STARTED TODAY</span>
+                <h1>
+                    Download
+                    <span>Pluto Browser.</span>
+                </h1>
+                <p>
+                    Experience a faster, cleaner, and more intentional way to explore the web on macOS.
+                </p>
+            </div>
+        </section>
+
+        <!-- Download Main Section -->
+        <section class="download-section" style="padding-top: 10px;">
+            <div class="container">
+
+                <!-- Main Release Card -->
+                <div class="download-card">
+                    <div class="download-glow"></div>
+
+                    <span class="eyebrow">LATEST RELEASE — VERSION 1.1.0</span>
+
+                    <h2>Ready for Apple Silicon</h2>
+                    <p>
+                        Engineered natively for macOS Monterey, Ventura, Sonoma, and Sequoia on M1, M2, M3, and M4 Macs.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a
+                            href="https://github.com/ParamMavani/pluto-browser/releases/tag/v1.1.0"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary"
+                        >
+                            Download for macOS <span>↓</span>
+                        </a>
+
+                        <a
+                            href="https://github.com/ParamMavani/pluto-browser/releases"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-secondary"
+                        >
+                            All Releases on GitHub <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="download-specs">
+                        <span class="spec-tag">Apple Silicon (arm64)</span>
+                        <span class="spec-dot">·</span>
+                        <span class="spec-tag">macOS 12.0+</span>
+                        <span class="spec-dot">·</span>
+                        <span class="spec-tag">Version 1.1.0</span>
+                    </div>
+                </div>
+
+                <!-- Gatekeeper Unsigned Build Notice -->
+                <div class="notice-card">
+                    <div class="notice-header">
+                        <span class="notice-badge">Notice</span>
+                        <span style="font-size: 13px; font-weight: 700; color: #fbbf24;">macOS Gatekeeper Verification</span>
+                    </div>
+                    <h3>Opening Pluto on macOS for the First Time</h3>
+                    <p>
+                        Pluto is an independent, community-driven open-source project. Because this build is currently unsigned and not notarized with an Apple Developer Certificate, macOS Gatekeeper may display a security prompt such as <em>"Pluto can't be opened because Apple cannot check it for malicious software"</em> or <em>"Unidentified developer"</em>.
+                    </p>
+                    <p style="font-weight: 600; color: var(--text-primary); margin-bottom: 8px;">
+                        How to open Pluto safely:
+                    </p>
+                    <ul class="notice-steps">
+                        <li>
+                            <span class="step-bullet">1</span>
+                            <div>
+                                Drag <strong>Pluto.app</strong> into your <strong>/Applications</strong> folder.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-bullet">2</span>
+                            <div>
+                                <strong>Right-click (or Control-click)</strong> on Pluto in Applications and choose <strong>Open</strong> from the context menu (do not just double-click).
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-bullet">3</span>
+                            <div>
+                                On the macOS dialog box that appears, click the <strong>Open</strong> button. macOS will remember your decision, and Pluto will launch normally from then on.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-bullet">4</span>
+                            <div>
+                                <em>Alternative:</em> Open macOS <strong>System Settings</strong> &gt; <strong>Privacy & Security</strong>, scroll down to the <strong>Security</strong> section, and click <strong>Open Anyway</strong> next to the Pluto prompt.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- System Requirements & Hardware Compatibility -->
+                <div class="content-card" style="margin-top: 40px;">
+                    <span class="eyebrow">COMPATIBILITY MATRIX</span>
+                    <h2 style="font-size: 22px; margin-bottom: 8px;">System & Hardware Requirements</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px;">
+                        Please verify your hardware compatibility before downloading.
+                    </p>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="label">Apple Silicon Architecture</span>
+                            <span class="value" style="display: flex; align-items: center; justify-content: space-between;">
+                                M1, M2, M3, M4 (arm64)
+                                <span class="compat-pill compat-yes">✓ Supported</span>
+                            </span>
+                        </div>
+
+                        <div class="spec-item">
+                            <span class="label">Intel x86_64 Architecture</span>
+                            <span class="value" style="display: flex; align-items: center; justify-content: space-between;">
+                                Intel-based Macs
+                                <span class="compat-pill compat-no">✕ Incompatible</span>
+                            </span>
+                            <small style="color: var(--accent-danger); font-size: 11.5px; margin-top: 4px;">
+                                Version 1.1.0 does not support Intel processors. An Apple Silicon Mac is required.
+                            </small>
+                        </div>
+
+                        <div class="spec-item">
+                            <span class="label">Operating System</span>
+                            <span class="value">macOS Monterey 12.0 or newer</span>
+                            <small style="color: var(--text-muted); font-size: 11.5px; margin-top: 4px;">
+                                Compatible with Monterey, Ventura, Sonoma, and Sequoia.
+                            </small>
+                        </div>
+
+                        <div class="spec-item">
+                            <span class="label">Memory & Storage</span>
+                            <span class="value">4 GB RAM (8 GB rec.) · 250 MB Space</span>
+                            <small style="color: var(--text-muted); font-size: 11.5px; margin-top: 4px;">
+                                Lightweight Electron bundle with minimal disk footprint.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Installation Steps -->
+                <div class="section-heading" style="margin-top: 70px;">
+                    <span class="eyebrow">QUICK START</span>
+                    <h2>Install in 3 simple steps.</h2>
+                    <p>Everything you need to launch Pluto on your machine.</p>
+                </div>
+
+                <div class="step-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Download Release</h3>
+                        <p>Grab the latest <code>.dmg</code> or archive for version 1.1.0 from the official GitHub Releases page.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Move to Applications</h3>
+                        <p>Open the disk image and drag the Pluto icon into your Mac's Applications folder.</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Launch with Control-Click</h3>
+                        <p>Control-click Pluto and select Open to bypass Gatekeeper on the first run, then explore freely.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="brand" aria-label="Pluto Browser Home">
+                        <img src="assets/logo/pluto-logo.png" alt="Pluto Logo">
+                        <span>PLUTO</span>
+                    </a>
+
+                    <p>Private. Independent. Yours. Built for modern explorers of the web.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <a href="features.html">Features</a>
+                        <a href="download.html">Download</a>
+                        <a href="about.html">About Pluto</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="docs.html">Documentation</a>
+                        <a href="https://github.com/ParamMavani/pluto-browser"
+                           target="_blank"
+                           rel="noopener noreferrer">GitHub <span>↗</span></a>
+                        <a href="https://github.com/ParamMavani/pluto-browser/issues"
+                           target="_blank"
+                           rel="noopener noreferrer">Report an issue</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Pluto. All rights reserved.</p>
+                <p>Made for exploring the universe.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

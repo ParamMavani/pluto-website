@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Documentation — Pluto Browser</title>
+    <meta name="description" content="Official documentation, guides, and keyboard shortcuts for Pluto Desktop Browser on macOS.">
+
+    <link rel="icon" type="image/png" href="assets/logo/pluto-logo.png">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="js/main.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="brand" aria-label="Pluto Browser Home">
+                <img src="assets/logo/pluto-logo.png" alt="Pluto Logo">
+                <span>PLUTO</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="download.html">Download</a>
+                <a href="about.html">About</a>
+                <a href="docs.html" class="active">Docs</a>
+                <a href="download.html" class="nav-download">Get Pluto <span>↗</span></a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="hero-glow hero-glow-left"></div>
+            <div class="hero-glow hero-glow-right"></div>
+            <div class="stars"></div>
+
+            <div class="container hero-content">
+                <span class="eyebrow">GUIDES & DOCUMENTATION</span>
+                <h1>
+                    Getting started with
+                    <span>Pluto.</span>
+                </h1>
+                <p>
+                    Everything you need to navigate, configure, and master your Pluto browsing experience on macOS.
+                </p>
+            </div>
+        </section>
+
+        <!-- Documentation Layout Section -->
+        <section class="section" style="padding-top: 10px;">
+            <div class="container">
+
+                <div class="docs-layout">
+
+                    <!-- Sticky Table of Contents Sidebar -->
+                    <aside class="docs-sidebar" aria-label="Documentation navigation">
+                        <h4>Documentation</h4>
+                        <nav class="docs-nav-links">
+                            <a href="#quick-start">Quick Start</a>
+                            <a href="#tab-management">Tab Management</a>
+                            <a href="#keyboard-shortcuts">Keyboard Shortcuts</a>
+                            <a href="#search-privacy">Search & Privacy</a>
+                            <a href="#data-storage">Data & Storage</a>
+                            <a href="#gatekeeper-help">Gatekeeper Setup</a>
+                        </nav>
+                    </aside>
+
+                    <!-- Main Documentation Content Area -->
+                    <div class="docs-content">
+
+                        <!-- Quick Start Section -->
+                        <article class="content-card" id="quick-start">
+                            <span class="eyebrow">OVERVIEW</span>
+                            <h2 style="font-size: 22px; margin-bottom: 12px;">Quick Start Guide</h2>
+                            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 14px;">
+                                When you launch Pluto for the first time, you are presented with a serene, dark-mode cosmic start page. The omnibar address bar is focused and ready to explore.
+                            </p>
+                            <ul style="color: var(--text-secondary); line-height: 1.75; padding-left: 20px;">
+                                <li><strong>Omnibar Navigation:</strong> Type any standard URL (e.g., <code>github.com</code>) to navigate directly, or type any phrase to search via DuckDuckGo automatically.</li>
+                                <li><strong>Navigation Controls:</strong> Use the top toolbar arrows to go back, go forward, and reload the current page.</li>
+                                <li><strong>Start Page Shortcuts:</strong> Quick access cards for your top destinations are displayed directly on the start screen.</li>
+                            </ul>
+                        </article>
+
+                        <!-- Tab Management Section -->
+                        <article class="content-card" id="tab-management">
+                            <span class="eyebrow">WORKFLOW</span>
+                            <h2 style="font-size: 22px; margin-bottom: 12px;">Multi-tab Management</h2>
+                            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 14px;">
+                                Pluto features lightweight, responsive tab switching designed to keep your workspace uncluttered.
+                            </p>
+                            <ul style="color: var(--text-secondary); line-height: 1.75; padding-left: 20px;">
+                                <li><strong>Open a New Tab:</strong> Press <code class="key-badge">⌘ T</code> or click the <code class="key-badge">+</code> button in the tab bar.</li>
+                                <li><strong>Close Tab:</strong> Press <code class="key-badge">⌘ W</code> or click the close icon on the active tab.</li>
+                                <li><strong>Reopen Closed Tab:</strong> Press <code class="key-badge">⌘ Shift T</code> to restore your most recently closed tab.</li>
+                                <li><strong>Switching Tabs:</strong> Click any tab in the top tab bar to bring it into focus instantly.</li>
+                            </ul>
+                        </article>
+
+                        <!-- Keyboard Shortcuts Section -->
+                        <article class="content-card" id="keyboard-shortcuts">
+                            <span class="eyebrow">PRODUCTIVITY</span>
+                            <h2 style="font-size: 22px; margin-bottom: 8px;">Keyboard Shortcuts</h2>
+                            <p style="color: var(--text-secondary); margin-bottom: 16px;">
+                                Pluto follows standard macOS conventions so your muscle memory transfers seamlessly.
+                            </p>
+
+                            <table class="shortcut-table">
+                                <thead>
+                                    <tr style="text-align: left; font-size: 11px; text-transform: uppercase; color: var(--text-muted); letter-spacing: 1px;">
+                                        <th style="padding: 8px 8px 12px;">Action</th>
+                                        <th style="padding: 8px 8px 12px;">Shortcut</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>New Tab</td>
+                                        <td><span class="key-badge">⌘</span> + <span class="key-badge">T</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Close Current Tab</td>
+                                        <td><span class="key-badge">⌘</span> + <span class="key-badge">W</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reopen Closed Tab</td>
+                                        <td><span class="key-badge">⌘</span> + <span class="key-badge">Shift</span> + <span class="key-badge">T</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Focus Address / Search Bar</td>
+                                        <td><span class="key-badge">⌘</span> + <span class="key-badge">L</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reload Page</td>
+                                        <td><span class="key-badge">⌘</span> + <span class="key-badge">R</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Force Reload (Ignore Cache)</td>
+                                        <td><span class="key-badge">⌘</span> + <span class="key-badge">Shift</span> + <span class="key-badge">R</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Navigate Back</td>
+                                        <td><span class="key-badge">⌘</span> + <span class="key-badge">[</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Navigate Forward</td>
+                                        <td><span class="key-badge">⌘</span> + <span class="key-badge">]</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bookmark Current Page</td>
+                                        <td><span class="key-badge">⌘</span> + <span class="key-badge">D</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Toggle Bookmarks Bar</td>
+                                        <td><span class="key-badge">⌘</span> + <span class="key-badge">B</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quit Application</td>
+                                        <td><span class="key-badge">⌘</span> + <span class="key-badge">Q</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+
+                        <!-- Search & Privacy Section -->
+                        <article class="content-card" id="search-privacy">
+                            <span class="eyebrow">SECURITY</span>
+                            <h2 style="font-size: 22px; margin-bottom: 12px;">DuckDuckGo Search & Privacy</h2>
+                            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px;">
+                                Pluto defaults to <strong>DuckDuckGo</strong> for all omnibar queries. DuckDuckGo does not store your IP address, record user search history, or share search queries with third-party data brokers.
+                            </p>
+                            <p style="color: var(--text-secondary); line-height: 1.7;">
+                                In addition, Pluto's Electron browser shell enforces strict sandboxed renderer execution, blocks unsafe remote JavaScript execution, and disables diagnostic analytics reporting.
+                            </p>
+                        </article>
+
+                        <!-- Local Data & Storage Section -->
+                        <article class="content-card" id="data-storage">
+                            <span class="eyebrow">STORAGE ARCHITECTURE</span>
+                            <h2 style="font-size: 22px; margin-bottom: 12px;">Local Data & Storage</h2>
+                            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 14px;">
+                                Unlike commercial browsers that upload telemetry, synced tabs, and browsing statistics to remote cloud servers, Pluto stores your data exclusively on your Mac.
+                            </p>
+                            <div class="spec-item" style="margin-bottom: 16px;">
+                                <span class="label">macOS Storage Directory</span>
+                                <code style="color: var(--accent-secondary); font-size: 13px; word-break: break-all;">~/Library/Application Support/pluto-browser/</code>
+                            </div>
+                            <p style="color: var(--text-secondary); line-height: 1.7;">
+                                <strong>Clearing Browsing Data:</strong> To wipe your cookies, cached assets, or browsing history, use the <em>Clear Browsing Data</em> option under the application menu or clear your local history from the History interface.
+                            </p>
+                        </article>
+
+                        <!-- Gatekeeper Setup Section -->
+                        <article class="content-card" id="gatekeeper-help">
+                            <span class="eyebrow">MACOS GATEKEEPER</span>
+                            <h2 style="font-size: 22px; margin-bottom: 12px;">Opening Unsigned Builds Safely</h2>
+                            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 14px;">
+                                If macOS blocks Pluto from launching with a message that Apple cannot verify the developer, you can open it with a single right-click:
+                            </p>
+                            <ol style="color: var(--text-secondary); line-height: 1.75; padding-left: 20px; margin-bottom: 16px;">
+                                <li>In <strong>Finder</strong>, open your <strong>Applications</strong> folder.</li>
+                                <li>Hold the <code class="key-badge">Control</code> key and click the <strong>Pluto</strong> application icon.</li>
+                                <li>Select <strong>Open</strong> from the contextual menu.</li>
+                                <li>Click <strong>Open</strong> in the confirmation alert dialog.</li>
+                            </ol>
+                            <p style="color: var(--text-secondary); font-size: 13.5px;">
+                                For full download instructions and compatibility details, visit the <a href="download.html" style="color: var(--accent-secondary); text-decoration: underline;">Download Page</a>.
+                            </p>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="brand" aria-label="Pluto Browser Home">
+                        <img src="assets/logo/pluto-logo.png" alt="Pluto Logo">
+                        <span>PLUTO</span>
+                    </a>
+
+                    <p>Private. Independent. Yours. Built for modern explorers of the web.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <a href="features.html">Features</a>
+                        <a href="download.html">Download</a>
+                        <a href="about.html">About Pluto</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="docs.html">Documentation</a>
+                        <a href="https://github.com/ParamMavani/pluto-browser"
+                           target="_blank"
+                           rel="noopener noreferrer">GitHub <span>↗</span></a>
+                        <a href="https://github.com/ParamMavani/pluto-browser/issues"
+                           target="_blank"
+                           rel="noopener noreferrer">Report an issue</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Pluto. All rights reserved.</p>
+                <p>Made for exploring the universe.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

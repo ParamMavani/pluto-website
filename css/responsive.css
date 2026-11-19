@@ -1,0 +1,311 @@
+/* ==========================================================================
+   Pluto Browser — Responsive Stylesheet
+   Refined Sizing for Tablets & Mobile
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Medium Screens (Tablets, up to 900px)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .footer-nav {
+        gap: 40px;
+    }
+
+    .hero {
+        padding: 60px 18px 45px;
+    }
+
+    .hero-glow-left,
+    .hero-glow-purple {
+        width: 380px;
+        height: 300px;
+        left: -100px;
+    }
+
+    .hero-glow-right,
+    .hero-glow-blue {
+        width: 380px;
+        height: 300px;
+        right: -100px;
+    }
+
+    .preview-section {
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    .step-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Small Screens (Mobile Devices, up to 650px)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 650px) {
+
+    .container {
+        width: min(calc(100% - 28px), var(--container-width));
+    }
+
+    .section,
+    .features-section,
+    .download-section {
+        padding: 48px 0;
+    }
+
+    .nav-container {
+        height: 58px;
+    }
+
+    .brand img {
+        height: 24px;
+    }
+
+    .brand {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Mobile Navigation Drawer */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 58px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 20px 18px;
+        background: rgba(14, 13, 31, 0.97);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: 0 16px 35px rgba(0, 0, 0, 0.6);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+        z-index: 99;
+        animation: mobileMenuSlide 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes mobileMenuSlide {
+        from {
+            opacity: 0;
+            transform: translateY(-6px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a:not(.nav-download) {
+        font-size: 14px;
+        padding: 7px 0;
+        border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-links a:not(.nav-download)::after {
+        display: none;
+    }
+
+    .nav-links a.nav-download {
+        border-bottom: none;
+        margin-top: 6px;
+        padding: 10px 18px !important;
+        justify-content: center;
+        font-size: 13.5px !important;
+        border-radius: var(--radius-pill);
+    }
+
+    /* Hero Responsive */
+    .hero {
+        padding: 48px 14px 38px;
+    }
+
+    .hero-badge,
+    .hero-label {
+        font-size: 10px;
+        padding: 4px 12px;
+        letter-spacing: 1.2px;
+        margin-bottom: 16px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1.2px;
+        margin-bottom: 14px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        line-height: 1.55;
+        margin-bottom: 22px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .hero-note {
+        font-size: 10.5px;
+        letter-spacing: 1.2px;
+        margin-top: 16px;
+    }
+
+    /* Preview Section */
+    .preview-section {
+        padding-top: 10px;
+        padding-bottom: 45px;
+    }
+
+    .preview-glow,
+    .browser-glow {
+        inset: -12px;
+        filter: blur(35px);
+    }
+
+    .browser-preview {
+        border-radius: 10px;
+    }
+
+    /* Features Grid */
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .feature-card {
+        padding: 18px 16px;
+        border-radius: var(--radius-md);
+    }
+
+    .feature-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .feature-card h3 {
+        font-size: 14.5px;
+    }
+
+    .feature-card p {
+        font-size: 12.5px;
+    }
+
+    /* Download Card */
+    .download-card {
+        padding: 38px 16px;
+        border-radius: 14px;
+    }
+
+    .download-specs {
+        font-size: 11px;
+    }
+
+    /* Footer Responsive */
+    .footer {
+        padding-top: 38px;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        gap: 28px;
+        padding-bottom: 28px;
+    }
+
+    .footer-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 16px 0;
+    }
+
+    /* Subpages */
+    .page-header {
+        padding: 45px 14px 30px;
+    }
+
+    .step-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .step-card {
+        padding: 16px 14px;
+    }
+
+    .specs-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .content-card {
+        padding: 20px 16px;
+    }
+}
+
+
+/* Docs layout responsive */
+@media (max-width: 900px) {
+    .docs-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .docs-sidebar {
+        position: static;
+        top: auto;
+    }
+
+    .docs-nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .docs-nav-links a {
+        padding: 5px 10px;
+        background: rgba(255, 255, 255, 0.03);
+    }
+}

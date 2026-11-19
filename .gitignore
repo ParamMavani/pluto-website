@@ -1,0 +1,17 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+
+# VS Code local settings
+.vscode/
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+
+# Build and deployment files
+dist/
+.vercel/

@@ -1,0 +1,46 @@
+:root {
+  /* Pluto backgrounds */
+  --bg-primary: #090817;
+  --bg-secondary: #131226;
+  --bg-surface: #1d1c34;
+  --bg-surface-hover: #262444;
+
+  /* Pluto accents */
+  --accent-primary: #8173e8;
+  --accent-secondary: #a18bff;
+  --accent-blue: #65a9ff;
+  --accent-cyan: #38bdf8;
+
+  /* Status and feedback colors */
+  --accent-success: #10b981;
+  --accent-warning: #f59e0b;
+  --accent-warning-bg: rgba(245, 158, 11, 0.08);
+  --accent-warning-border: rgba(245, 158, 11, 0.28);
+  --accent-danger: #ef4444;
+
+  /* Text colors */
+  --text-primary: #f5f3ff;
+  --text-secondary: #b0acca;
+  --text-muted: #7c7798;
+
+  /* Borders and effects */
+  --border-color: rgba(161, 139, 255, 0.16);
+  --border-subtle: rgba(161, 139, 255, 0.09);
+  --border-glow: rgba(161, 139, 255, 0.4);
+  --glow-purple: rgba(129, 115, 232, 0.2);
+  --glow-blue: rgba(101, 169, 255, 0.16);
+
+  /* Layout — tightened for better proportions */
+  --container-width: 1060px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* Typography */
+  --font-main: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, sans-serif;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
